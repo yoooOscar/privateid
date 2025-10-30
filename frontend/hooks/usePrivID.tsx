@@ -27,13 +27,14 @@ function getPrivIDByChainId(chainId: number | undefined): PrivIDInfoType {
   }
   const entry =
     (PrivIDAddresses as any)[chainId.toString() as keyof typeof PrivIDAddresses];
-  if (!("address" in entry) || entry.address === ethers.ZeroAddress) {
+  // Guard against undefined or malformed mapping entries
+  if (!entry || (entry as any).address === undefined || (entry as any).address === null || (entry as any).address === ethers.ZeroAddress) {
     return { abi: PrivIDABI.abi, chainId } as any;
   }
   return {
-    address: entry?.address as `0x${string}` | undefined,
-    chainId: entry?.chainId ?? chainId,
-    chainName: entry?.chainName,
+    address: (entry as any).address as `0x${string}` | undefined,
+    chainId: (entry as any).chainId ?? chainId,
+    chainName: (entry as any).chainName,
     abi: PrivIDABI.abi,
   } as any;
 }
