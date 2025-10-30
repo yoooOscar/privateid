@@ -1,0 +1,56 @@
+.message {
+  padding: 16px 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  animation: slideIn 0.3s ease-out;
+  border-left: 4px solid;
+}
+
+.icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 500;
+  flex: 1;
+}
+
+.info {
+  background: rgba(109, 213, 237, 0.1);
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+}
+
+.success {
+  background: rgba(126, 232, 164, 0.1);
+  border-color: var(--accent-green);
+  color: var(--accent-green);
+}
+
+.warning {
+  background: rgba(255, 217, 61, 0.1);
+  border-color: var(--warning);
+  color: var(--warning);
+}
+
+.error {
+  background: rgba(255, 107, 107, 0.1);
+  border-color: var(--error);
+  color: var(--error);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section {
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.handlesList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.infoBox {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: rgba(109, 213, 237, 0.05);
+  border: 1px solid rgba(109, 213, 237, 0.2);
+  border-radius: 12px;
+}
+
+.infoIcon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.infoText {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.infoText strong {
+  color: var(--accent-blue);
+  display: block;
+  margin-bottom: 4px;
+}
+

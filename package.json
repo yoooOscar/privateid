@@ -1,0 +1,9 @@
+{
+  "name": "privid-monorepo",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ]
+}
+

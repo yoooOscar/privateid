@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "types": ["node", "hardhat"],
+    "skipLibCheck": true,
+    "outDir": "dist"
+  },
+  "include": [
+    "./hardhat.config.ts",
+    "./deploy/**/*.ts",
+    "./tasks/**/*.ts",
+    "./contracts/**/*.sol",
+    "./types/**/*.d.ts"
+  ],
+  "files": [
+    "./hardhat.config.ts"
+  ]
+}
+
+

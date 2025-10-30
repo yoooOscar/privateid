@@ -1,0 +1,59 @@
+.container {
+  padding: 16px;
+  background: var(--bg-secondary);
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  border-color: var(--accent-blue);
+  box-shadow: 0 4px 8px rgba(109, 213, 237, 0.1);
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.icon {
+  font-size: 16px;
+}
+
+.valueContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.value {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  word-break: break-all;
+  font-family: monospace;
+}
+
+.copyButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  padding: 4px;
+}
+
+.copyButton:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+

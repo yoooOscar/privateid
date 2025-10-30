@@ -1,0 +1,38 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.buttonContainer {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.infoBox {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: rgba(109, 213, 237, 0.05);
+  border: 1px solid rgba(109, 213, 237, 0.2);
+  border-radius: 12px;
+  margin-top: 16px;
+}
+
+.infoIcon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.infoText {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.infoText strong {
+  color: var(--accent-blue);
+  display: block;
+  margin-bottom: 4px;
+}
+

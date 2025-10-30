@@ -1,0 +1,106 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.buttonContainer {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.resultsContainer {
+  margin-top: 24px;
+  padding: 20px;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.resultsTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-green) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.resultsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.resultItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.resultItem.success {
+  background: rgba(126, 232, 164, 0.1);
+  border: 1px solid var(--accent-green);
+}
+
+.resultItem.fail {
+  background: rgba(255, 107, 107, 0.1);
+  border: 1px solid var(--error);
+}
+
+.resultIcon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.resultInfo {
+  flex: 1;
+}
+
+.resultLabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.resultValue {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.infoBox {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: rgba(126, 232, 164, 0.05);
+  border: 1px solid rgba(126, 232, 164, 0.2);
+  border-radius: 12px;
+  margin-top: 16px;
+}
+
+.infoIcon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.infoText {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.infoText strong {
+  color: var(--accent-green);
+  display: block;
+  margin-bottom: 4px;
+}
+
